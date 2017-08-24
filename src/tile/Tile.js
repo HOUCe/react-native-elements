@@ -31,6 +31,7 @@ const Tile = props => {
     imageContainerStyle,
     containerStyle,
     contentContainerStyle,
+    titleNumberOfLines,
     ...attributes
   } = props;
 
@@ -120,7 +121,7 @@ const Tile = props => {
           contentContainerStyle && contentContainerStyle,
         ]}
       >
-        <Text h4 style={[styles.text, titleStyle && titleStyle]}>
+        <Text h4 style={[styles.text, titleStyle && titleStyle]} numberOfLines={titleNumberOfLines>
           {title}
         </Text>
         {children}
